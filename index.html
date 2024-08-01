@@ -5,85 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="https://kit.fontawesome.com/1e398523bc.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </head>
+
   <body>
-    <section id="landing">
-      <nav>
-        <div class="row">
-          <div class="nav">
-            <figure class="nav__figure">
-              <a class="nav__anchor" href="">
-                <img
-                  class="nav__img"
-                  src="https://treact.owaiskhan.me/static/media/logo.2c489fc453a1783cbadacf914efa3df6.svg"
-                  alt=""
-                />
-              </a>
-              <a class="nav__anchor" href="">Treact</a>
-            </figure>
-            <ul class="nav__links">
-              <li>
-                <a href="#" class="nav__link">About</a>
+    <nav>
+      <div class="row">
+        <div class="nav">
+          
+          <figure class="nav__figure">
+            <a class="nav__anchor" href="">
+              <img
+                class="nav__img"
+                src="https://treact.owaiskhan.me/static/media/logo.2c489fc453a1783cbadacf914efa3df6.svg"
+                alt=""
+              />
+            </a>
+            <a class="nav__anchor" href="">Treact</a>
+          </figure>
+          <ul class="nav__links">
+            <li>
+              <a href="#" class="nav__link">About</a>
+            </li>
+            <li>
+              <a href="#" class="nav__link">Blog</a>
+            </li>
+            <li>
+              <a href="#" class="nav__link">Pricing</a>
+            </li>
+            <li>
+              <a href="#" class="nav__link">Contact Us</a>
+            </li>
+            <li>
+              <a href="#" class="nav__link--login">Login</a>
+            </li>
+            <li>
+              <a href="#" class="nav__link--signup">Sign Up</a>
+            </li>
+          </ul>
+          <button class="menu__btn" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="nav__mobile__links--container">
+            <button class="menu__btn menu__btn--close" onclick="closeMenu()">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul class="nav__mobile--links">
+              <li class="mobile__menu--list">
+                <a href="#" class="nav__mobile--link" onclick="closeMenu()">About</a>
               </li>
-              <li>
-                <a href="#" class="nav__link">Blog</a>
+              <li class="mobile__menu--list">
+                <a href="#" class="nav__mobile--link" onclick="closeMenu()">Blog</a>
+              </li>  
+              <li class="mobile__menu--list">
+                <a href="#" class="nav__mobile--link" onclick="closeMenu()">Pricing</a>
               </li>
-              <li>
-                <a href="#" class="nav__link">Pricing</a>
+              <li class="mobile__menu--list">
+                <a href="#" class="nav__mobile--link" onclick="closeMenu()">Contact Us</a>
               </li>
-              <li>
-                <a href="#" class="nav__link">Contact Us</a>
+              <li class="mobile__menu--list">
+                <a href="#" class="nav__mobile--link" onclick="closeMenu()">Login</a>
               </li>
-              <li>
-                <a href="#" class="nav__link--login">Login</a>
-              </li>
-              <li>
-                <a href="#" class="nav__link--signup">Sign Up</a>
+              <li class="mobile__menu--signup">
+                <a href="#" class="nav__mobile--signup" onclick="closeMenu()">Sign Up</a>
               </li>
             </ul>
           </div>
         </div>
-      </nav>
-      <header>
-        <div class="row">
-          <div class="header">
-            <div class="header__description">
-              <h1>
-                Beautiful React Templates <span class="purple">for you.</span>
-              </h1>
-              <p class="header__para">
-                Our templates are easy to setup, understand and customize. Fully
-                modular components with a variety of pages and components.
-              </p>
-              <div class="header__input">
-                <input type="email" placeholder="Your E-mail Address" />
-                <button class="header__btn">Get Started</button>
-              </div>
-              <p class="header__customer--para">OUR TRUSTED CUSTOMERS</p>
-              <figure class="header__img--customer-wrapper">
-                <img
-                  src="./assets/customers-logo-strip.png"
-                  class="header__img--customers"
-                  alt=""
-                />
-              </figure>
+      </div>
+    </nav>
+    <section id="banners">
+      <div class="banner__row">
+        <div class="banner">
+          <div class="banner__description">
+            <h1>
+              Beautiful React Templates <span class="purple">for you.</span>
+            </h1>
+            <p class="banner__para">
+              Our templates are easy to setup, understand and customize. Fully
+              modular components with a variety of pages and components.
+            </p>
+            <div class="banner__input">
+              <input type="email" placeholder="Your E-mail Address" />
+              <button class="banner__btn">Get Started</button>
             </div>
-            <figure class="header__img--wrapper">
+            <p class="banner__customer--para">OUR TRUSTED CUSTOMERS</p>
+            <figure class="banner__img--customer-wrapper">
               <img
-                src="https://treact.owaiskhan.me/static/media/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
-                class="header__img"
+                src="./assets/customers-logo-strip.png"
+                class="banner__img--customers"
                 alt=""
               />
             </figure>
           </div>
+          <figure class="banner__img--wrapper">
+            <img
+              src="https://treact.owaiskhan.me/static/media/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
+              class="banner__img"
+              alt=""
+            />
+          </figure>
         </div>
-      </header>
+      </div>
     </section>
 
-    <section>
+    <section id="features">
       <div class="container">
-        <div class="row">
-          <div class="features">
+        <div class="features__row">
+          <div class="features__header">
             <h5 class="section__title">FEATURES</h5>
             <h2 class="section__subtitle">
               We have Amazing
@@ -193,18 +223,110 @@
       </div>
     </section>
 
-    <section>
+    <section id="designs">
       <div class="container">
         <div class="row">
           <div class="designs__row">
             <div class="designs__text">
               <h5 class="designs__text--title">QUALITY WORK</h5>
-              <h2 class="designs__text--subtitle">Designed & Developed by <span class="design__purple">Professionals.</span></h2>
-              <p class="designs__text--para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat libero et sed rerum nemo aliquam optio dolorem soluta cupiditate expedita architecto amet officia ratione dolore totam iusto nam, veritatis in fuga saepe asperiores, consectetur corrupti similique? Voluptates porro quis sit?</p>
-              <a href="https://timerse.com/" class="designs__anchor">Learn More</a>
+              <h2 class="designs__text--subtitle">
+                Designed & Developed by
+                <span class="design__purple">Professionals.</span>
+              </h2>
+              <p class="designs__text--para">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat libero et sed rerum nemo aliquam optio dolorem soluta
+                cupiditate expedita architecto amet officia ratione dolore totam
+                iusto nam, veritatis in fuga saepe asperiores, consectetur
+                corrupti similique? Voluptates porro quis sit?
+              </p>
+              <a href="https://timerse.com/" class="designs__anchor" target="blank"
+                >Learn More</a
+              >
             </div>
             <figure class="designs__img--wrapper">
-              <img src="./assets/hero-screenshot-1.png" class="designs__img" alt="">
+              <img
+                src="./assets/hero-screenshot-1.png"
+                class="designs__img"
+                alt=""
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="registration">
+            <figure class="registration__img--wrapper">
+              <img src="./assets/hero-screenshot-2.png" class="registration__img" alt="">
+            </figure>
+            <div class="registration__text">
+              <h5 class="registration__title">STEPS</h5>
+              <h2 class="registration__subtitle">Easy to <span class="purple">Get Started.</span></h2>
+              <ul class="registration__list">
+                <li class="registration__steps">
+                  <div class="registration__steps--number">01</div>
+                  <div class="registration__steps--text">
+                    <h6 class="registration__steps--header">Register</h6>
+                    <p class="registration__steps--para">Create an account with us using Google or Facebook.</p>
+                  </div>
+                </li>
+                <li class="registration__steps">
+                  <div class="registration__steps--number">02</div>
+                  <div class="registration__steps--text">
+                    <h6 class="registration__steps--header">Download</h6>
+                    <p class="registration__steps--para">Create an account with us using Google or Facebook.</p>
+                  </div>
+                </li>
+                <li class="registration__steps">
+                  <div class="registration__steps--number">03</div>
+                  <div class="registration__steps--text">
+                    <h6 class="registration__steps--header">Run</h6>
+                    <p class="registration__steps--para">Create an account with us using Google or Facebook.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="values__wrapper">
+            <div class="values__text">
+              <h5 class="values__title">VALUES</h5>
+              <h2 class="values__subtitle">We Always Abide by Our <span class="purple">Principles.</span></h2>
+              <P class="values__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quam sunt. Voluptates molestiae ut numquam quas nobis alias dolorum animi deleniti ea asperiores fugiat dignissimos iure quaerat facilis, dicta necessitatibus incidunt pariatur quam temporibus cumque non commodi sit in. Voluptatum.</P>
+              <div class="values__subtext--container">
+                <div class="values__subtext--wrapper">
+                  <div class="values__subtext--header">
+                      <figure class="subtext__img--wrapper-left">
+                        <img src="./assets/dollar-sign.svg" class="subtext__img" alt="">
+                      </figure>
+                      <h3 class="subtext__header">Affordable</h3>
+                    </div>
+                    <p class="subtext__para">We promise to offer you the best rate we can at par with the industry starndard.</p>
+                </div>
+                <div class="values__subtext--wrapper">
+                  <div class="values__subtext--header">
+                      <figure class="subtext__img--wrapper-right">
+                        <img src="./assets/briefcase.svg" class="subtext__img" alt="">
+                      </figure>
+                      <h3 class="subtext__header">Professionalism</h3>
+                    </div>
+                    <p class="subtext__para">We assure you that our templates are designed and created by professional designers.</p>
+                </div>
+              </div>
+              <a href="https://timerse.com/" class="values__anchor" target="blank">Learn More</a> 
+            </div>
+            <figure class="values__img--wrapper">
+              <img src="./assets/prototype-illustration.svg" class="values__img" alt="">
             </figure>
           </div>
         </div>
@@ -212,3 +334,4 @@
     </section>
   </body>
 </html>
+
