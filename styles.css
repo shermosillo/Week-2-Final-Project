@@ -1223,23 +1223,25 @@ INFO SECTION
 
 .info__wrapper {
     width: 100%;
+    height: 282px;
     background-color: #6415FF;
     display: flex;
     border-radius: 8px;
 }
 
 .info__text--wrapper {
+    width: 50%;
     display: flex;
+    align-items: center;
 
 }
 
 .info__para {
-    width: 50%;
+    width: 100%;
     font-size: 30px;
     color: #F7FAFC;
     font-weight: 700;
-    margin: 0 auto;
-    height: 282px;
+    margin-left: 108px;
     display: flex;
     align-items: center;
 }
@@ -1460,7 +1462,40 @@ FOOTER SECTION
         width: calc(100%/2);
     }
 
-    
+    .plans__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plans-left {
+        margin: 64px 0 0;
+        width: 376px;
+    }
+
+    .plans-center {
+        margin: 64px 0 0;
+        width: 376px;
+    }
+
+    .plans-right {
+        margin: 64px 0 0;
+        width: 376px;
+    }
+
+    .info__wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info__text--wrapper {
+        width: 100%;
+    }
+
+    .info__btn--wrapper {
+        width: 100%;
+        margin-top: 64px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1598,10 +1633,36 @@ FOOTER SECTION
         text-align: center;
     }
 
-    .plans__container {
+    .testimonial__wrapper {
         flex-direction: column;
         align-items: center;
+        text-align: center;
+    }
+
+    .testimonial__text--wrapper {
+        margin-top: 64px;
+        padding: 0;
     }
 }
 
 /* SMALL PHONES, LARGE SMARTPHONE */
+
+@media (max-width: 576px) {
+    .review__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review__shift--wrapper {
+        margin: 32px 0 0;
+    }
+
+    .info__btn--wrapper {
+        flex-direction: column;
+    }
+}
