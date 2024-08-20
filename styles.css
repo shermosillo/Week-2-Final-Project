@@ -1005,6 +1005,7 @@ TESTIMONIAL SECTION
 
 .testimonial__img--wrapper {
     width: 50%;
+    display: flex;
 }
 
 .testimonial__img {
@@ -1241,7 +1242,7 @@ INFO SECTION
     font-size: 30px;
     color: #F7FAFC;
     font-weight: 700;
-    margin-left: 108px;
+    padding: 0 56px;
     display: flex;
     align-items: center;
 }
@@ -1250,6 +1251,7 @@ INFO SECTION
     width: 50%;
     display: flex;
     align-items: center;
+    padding: 0 48px;
 }
 
 .info__btn--left {
@@ -1259,6 +1261,7 @@ INFO SECTION
 
 .info__btn--right {
     width: 50%;
+    text-align: center;
 }
 
 .info__btn--text-left {
@@ -1300,19 +1303,18 @@ LINKS SECTION
 .links__container {
     background-color: #6415FF;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 80px
 }
 
 .links__row {
-    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
     border-bottom: 1px solid #742CFF;
 }
 
 .links__column {
-    width: 20%;
     display: flex;
     margin: 48px 0;
 }
@@ -1360,7 +1362,7 @@ FOOTER SECTION
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .footer__logo--wrapper {
@@ -1495,6 +1497,10 @@ FOOTER SECTION
     .info__btn--wrapper {
         width: 100%;
         margin-top: 64px;
+    }
+
+    .links__row {
+        margin: 0 20px;
     }
 }
 
@@ -1643,6 +1649,15 @@ FOOTER SECTION
         margin-top: 64px;
         padding: 0;
     }
+
+    .links__row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer__row {
+        flex-wrap: wrap;
+    }
 }
 
 /* SMALL PHONES, LARGE SMARTPHONE */
@@ -1662,7 +1677,34 @@ FOOTER SECTION
         margin: 32px 0 0;
     }
 
+    .info__text--wrapper {
+        margin: 0 auto;
+    }
+
+    .info__para {
+        font-size: 24px;
+        margin: 0;
+        padding: 0 32px;
+        text-align: center;
+    }
+
     .info__btn--wrapper {
         flex-direction: column;
+        margin-top: 40px;
+        padding: 0;
+    }
+
+    .info__btn--right {
+        margin-top: 52px;
+    }
+
+    .info__btn--text-left {
+        font-size: 14px;
+        padding: 12px 24px;
+    }
+
+    .info__btn--text-right {
+        font-size: 14px;
+        padding: 12px 24px;
     }
 }
