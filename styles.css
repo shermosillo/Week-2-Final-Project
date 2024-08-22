@@ -344,7 +344,7 @@ BANNER
 
 .banner__customer--para {
     margin-top: 80px;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 700;
     color: #A0AEC0;
 }
@@ -1512,7 +1512,25 @@ FOOTER SECTION
     }
 }
 
+/* LARGE SMARTPHONES */
+
 @media (max-width: 768px) {
+
+    .banner__input {
+        position: relative;
+        width: 90%;
+    }
+
+    .banner__btn {
+        width: 100%;
+        position: absolute;
+        top: 72px;
+    }
+
+    .banner__customer--para {
+        margin-top: 108px;
+    }
+
     .banner__img--wrapper {
         width: 100%;
     }
